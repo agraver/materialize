@@ -16,23 +16,8 @@
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
+  <button class="btn-large waves-effect waves-light pink">Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="nav">
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
 </template>
 
 <template name="indexBanner">
@@ -44,7 +29,7 @@
         <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
       </div>
       <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light pink">Get Started</a>
+        {{> hello}}
       </div>
       <br><br>
     </div>
