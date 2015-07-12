@@ -1,13 +1,5 @@
 if (Meteor.isClient) {
   // counter starts at 0
-  (function($){
-    $(function(){
-
-      $('.button-collapse').sideNav();
-
-    }); // end of document ready
-  })(jQuery); // end of jQuery name space
-
   Session.setDefault('counter', 0);
 
   Template.hello.helpers({
